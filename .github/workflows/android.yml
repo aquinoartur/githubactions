@@ -1,4 +1,4 @@
-name: Android Release & Firebase Distribution
+name: Android Firebase Distribution
 
 on:
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'
+          flutter-version: '3.24.2'
 
       - name: Decode keystore
         run: |
